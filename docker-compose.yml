@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./smosky-boilerplate-server
+      dockerfile: Dockerfile
+    container_name: smosky-boilerplate-server
+    ports:
+      - "8090:8090"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - blog-network
+    restart: unless-stopped
+
+  app:
+    build:
+      context: ./smosky-client
+      dockerfile: Dockerfile
+    container_name: smosky-app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    networks:
+      - blog-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  blog-network:
+    external: true
+    name: shared-network

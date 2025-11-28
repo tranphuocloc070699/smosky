@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+smosky-client/.idea
+smosky-client/yarn.lock
+smosky-client/.vscode/

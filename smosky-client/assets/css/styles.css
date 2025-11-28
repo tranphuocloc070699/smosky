@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-1 px-5 text-white font-normal rounded-[5px] focus:ring-opacity-75;
+  }
+}
+
+html {
+  font-family: 'Roboto', system-ui, sans-serif;
+  line-height: 1.8rem;
+  font-weight: 300;
+  color: #333;
+
+}
+
+
+
+/* width */
+html::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+

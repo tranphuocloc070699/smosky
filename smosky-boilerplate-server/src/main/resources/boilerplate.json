@@ -1,0 +1,36 @@
+[
+  {
+    "name": "CRUD With Spring Data Jpa (Postgresql)",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3_ABebrcKM6_91YZTp7yNtcjFLNpQpBRkw&s",
+    "description": "Simple CRUD template.",
+    "dependencies": ["lombok","web","data-jpa","postgresql","general"],
+    "previewLink": "https://www.youtube.com/embed/eoJecvGMR6E",
+    "type": "SPRING",
+    "features": [
+      "RESTful api endpoints",
+      "Customizable Data models",
+      "Auto generate application.properties key"
+    ],
+    "tags": [
+      "Postgresql",
+      "Spring data jpa"
+    ]
+  },
+  {
+    "name": "CRUD With Spring Data Jpa (MySQL)",
+    "thumbnail": "https://techvccloud.mediacdn.vn/zoom/600_315/2020/9/17/mysql-1-1600340047538868003500-crop-160034079526453914971.png",
+    "description": "Simple CRUD template.",
+    "dependencies": ["lombok","web","data-jpa","mysql","general"],
+    "previewLink": "https://www.youtube.com/embed/eoJecvGMR6E",
+    "type": "SPRING",
+    "features": [
+      "RESTful api endpoints",
+      "Customizable Data models",
+      "Auto generate application.properties key"
+    ],
+    "tags": [
+      "Mysql",
+      "Spring data jpa"
+    ]
+  }
+]

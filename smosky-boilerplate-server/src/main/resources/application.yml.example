@@ -1,0 +1,92 @@
+server:
+  port: 8090
+  error:
+    include-message: always
+    whitelabel:
+      enabled: false
+    path: /error
+spring:
+  cloud:
+    config:
+      enabled: false
+#  application:
+#    name: "boilerplate-server"
+#  profiles:
+#    active: "prod"
+  main:
+    web-application-type: servlet
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smosky
+    username: loctran
+    password: Loc123456
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    properties:
+      format-sql: true
+    show-sql: false
+#  config:
+#    import: optional:file:.env[.properties]
+#    logging.level:
+#      org.springframework.security: TRACE
+  # rabbitmq:
+  #   host: "localhost"
+  #   port: 5672
+  #   username: "guest"
+  #   password: "guest"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+  info:
+    env:
+      enabled: true
+
+endpoints:
+  shutdown:
+    enabled: true
+
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    fetchRegistry: true
+#    registerWithEureka: true
+#    serviceUrl:
+#      defaultZone: http://localhost:8071/eureka/
+
+info:
+  app:
+    name: "Boilerplate Server"
+    description: "Boilerplate Application"
+    version: "1.0.0"
+
+logging:
+  level:
+    com:
+      smosky:
+        accounts: DEBUG
+
+application:
+  bucket:
+    name: softsky
+
+aws:
+  access-key-id:
+  secret-access-key:
+  region:
