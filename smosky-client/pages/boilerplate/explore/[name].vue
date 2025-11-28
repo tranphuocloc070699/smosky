@@ -90,10 +90,10 @@ import {
 import type {INavigation} from "~/types/components";
 import type {IDownloadBoilerplateFromPreview} from "~/types/request";
 
-
-definePageMeta({
-  layout: "detail",
-});
+//
+// definePageMeta({
+//   layout: "detail",
+// });
 
 const route = useRoute();
 const requestData = ref({});

@@ -32,7 +32,6 @@
             />
           </label>
         </UTooltip>
-
         <UInput
             v-if="property.options.length === 0"
             v-model="property.value"
@@ -41,12 +40,13 @@
             placeholder="Enter something..."
             variant="outline"
         />
+
         <USelect
             v-else
             v-model="property.value"
             :options="property.options"
             class="flex-1"
-            option-attribute="type"
+
         />
       </div>
     </div>

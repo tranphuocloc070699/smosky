@@ -35,29 +35,29 @@ export const languageOptions = [
 
 export const springBootVersionOptions = [
   {
-    value: "4.0.0-SNAPSHOT",
-    label: "4.0.0 (SNAPSHOT)",
+    "value": "4.0.1-SNAPSHOT",
+    "label": "4.0.1 (SNAPSHOT)"
   },
   {
-    value: "4.0.0-M1",
-    label: "4.0.0 (M1)",
+    "value": "4.0.0",
+    "label": "4.0.0"
   },
   {
-    value: "3.5.5-SNAPSHOT",
-    label: "3.5.5 (SNAPSHOT)",
+    "value": "3.5.9-SNAPSHOT",
+    "label": "3.5.9 (SNAPSHOT)"
   },
   {
-    value: "3.5.4",
-    label: "3.5.4",
+    "value": "3.5.8",
+    "label": "3.5.8"
   },
   {
-    value: "3.4.9-SNAPSHOT",
-    label: "3.4.9 (SNAPSHOT)",
+    "value": "3.4.13-SNAPSHOT",
+    "label": "3.4.13 (SNAPSHOT)"
   },
   {
-    value: "3.4.8",
-    label: "3.4.8",
-  },
+    "value": "3.4.12",
+    "label": "3.4.12"
+  }
 ];
 
 export const packagingOptions = [

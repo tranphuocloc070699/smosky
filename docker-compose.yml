@@ -31,4 +31,4 @@ volumes:
 networks:
   blog-network:
     external: true
-    name: shared-network
+    name: blog-network

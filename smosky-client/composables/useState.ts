@@ -41,7 +41,7 @@ export const useSpringDependenciesSelected = () =>
 export const useCreateBoilerplateData = () =>
   useState<ICreateBoilerplate>("create-boilerplate-data", () => ({
     type: "maven-project",
-    bootVersion: "3.2.2",
+    bootVersion: "4.0.0",
     metadata: {
       groupId: {
         value: "com.example",
