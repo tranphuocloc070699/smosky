@@ -18,7 +18,7 @@ services:
       dockerfile: Dockerfile
     container_name: smosky-app
     env_file:
-      - .env
+      - ./smosky-client/.env
     ports:
       - "8000:8000"
     networks:

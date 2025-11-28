@@ -1,5 +1,5 @@
 # use node 18 alpine image
-FROM --platform=linux/amd64 node:18-alpine
+FROM node:18-alpine
 
 # create work directory in app folder
 WORKDIR /app
@@ -9,7 +9,7 @@ RUN apk --no-cache add openssh g++ make python3 git
 
 # copy over package.json files
 COPY package.json /app/
-COPY package-lock.json /app/
+#COPY package-lock.json /app/
 
 RUN npm install
 
