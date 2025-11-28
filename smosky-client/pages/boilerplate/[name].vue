@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <AppNavigation :data="navigationData" />
     <!-- Header -->
-    <BoilerplateInfo type="boilerplate" />
+   <BoilerplateInfo type="boilerplate" />
     <!-- Body -->
     <!-- Project -->
     <!-- <div class="p-4">
@@ -14,8 +14,8 @@
     </div> -->
 
     <AppTitle
-      :data="{ title: 'Example project', iconName: 'heroicons-document' }"
       v-if="boilerplateStore.boilerplate && boilerplateStore.boilerplate?.projectStructure"
+      :data="{ title: 'Example project', iconName: 'heroicons-document' }"
     >
       <InteractiveProjectStructure
         :data="boilerplateStore.boilerplate?.projectStructure"
@@ -28,11 +28,11 @@
     >
     <template #image>
       <img
-        src="@/assets/images/sparkles.svg"
         alt="Home"
-        width="24"
-        height="24"
         class="w-7 h-7 pr-2"
+        height="24"
+        src="@/assets/images/sparkles.svg"
+        width="24"
       />
     </template>
     <template #default>
@@ -53,11 +53,11 @@
 
       <template #image>
       <img
-        src="@/assets/images/chat.svg"
         alt="Home"
-        width="24"
-        height="24"
         class="w-7 h-7 pr-2"
+        height="24"
+        src="@/assets/images/chat.svg"
+        width="24"
       />
     </template>
     <template #default>
@@ -73,7 +73,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { INavigation } from "~/types/components";
 import { useBoilerplateItem } from "~/composables/useState";
 import useApi from "~/composables/useApi";

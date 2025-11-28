@@ -1,23 +1,23 @@
 <template>
   <ClientOnly>
     <div class="flex items-start border border-slate-200 rounded-md ">
-      <div class="border-r border-slate-200 br-8 flex-1 h-[660px] overflow-y-scroll scrollbar">
+      <div class="border-r border-slate-200 br-8 flex-1 flex flex-col">
         <h4
           class="border-b border-slate-200 p-4 text-center bg-slate-100 font-medium text-lg"
         >
           {{ props.data.name }}
         </h4>
-        <div class="bg-gray-50">
+        <div class="bg-gray-50 h-full max-h-[560px] overflow-y-scroll scrollbar flex-1">
           <ProjectStructureFromJson :node="props.data"  />
         </div>
       </div>
-      <div v-show="!isMobile" class="flex-1 w-[500px]  h-[660px] overflow-y-scroll scrollbar">
+      <div v-show="!isMobile" class="flex-1 flex flex-col w-[500px]">
         <h4
           class="border-b border-slate-200 p-4  text-center bg-slate-100 font-medium text-lg"
         >
           {{ fileSelected.name }}
         </h4>
-        <div class="-my-2">
+        <div class=" h-full max-h-[560px] flex-1 overflow-y-scroll scrollbar">
           <pre
             class="rounded-none scrollbar"
           ><code :class="`lang-${fileSelected.language}`">{{ fileSelected.content }}</code></pre>
@@ -27,7 +27,7 @@
   </ClientOnly>
 </template>
 
-<script setup lang="tsx">
+<script lang="tsx" setup>
 interface IProps {
   node: IProjectStructure;
 }

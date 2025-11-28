@@ -2,31 +2,26 @@
  
     <UModal
       :model-value="isOpen"
-      @update:model-value="toggleModal"
       fullscreen
       prevent-close
+      @update:model-value="toggleModal"
     >
       <div>
-        <div class="flex justify-end px-4 py-4">
+        <div class="flex justify-end px-4 py-4 gap-4">
+
+            <UButton
+                icon="i-heroicons-arrow-down-tray"
+                @click="onDownloadBoilerplateFromPreview"
+            />
           <UButton
-            color="gray"
-            variant="ghost"
-            icon="i-heroicons-x-mark-20-solid"
             class="-my-1"
+            color="gray"
+            icon="i-heroicons-x-mark-20-solid"
+            variant="ghost"
             @click="toggleModal"
           />
         </div>
-        <AppTitle :data="{ title: 'Preview project', iconName: 'heroicons-chevron-double-up-16-solid' }">
-          <InteractiveProjectStructure :data="projectStructure"/>
-
-          <div class="flex items-end mt-10">
-            <UButton
-          class="px-4 py-2 min-w-32 flex items-center justify-center"
-          @click="onDownloadBoilerplateFromPreview"
-          >Download</UButton
-        >
-          </div>
-      </AppTitle>
+        <InteractiveProjectStructure :data="projectStructure"/>
 
 
       
@@ -34,7 +29,7 @@
     </UModal>
 </template>
 w
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { IProjectStructure } from '~/types/model';
 
 const props = defineProps<{

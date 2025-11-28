@@ -20,45 +20,45 @@ html {
 
 /* width */
 html::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 
 }
 
 /* Track */
 html::-webkit-scrollbar-track {
-  background: #F8FAFC;
+  background: #fff;
 }
 
 /* Handle */
 html::-webkit-scrollbar-thumb {
-  background: #10b981;
-  border-radius: 10px;
+  background: #90a1b9;
+  border-radius: 20px;
 }
 
 /* Handle on hover */
 html::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #90a1b9;
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  /*height: 8px;*/
 }
 
 
 /* Track */
 .scrollbar::-webkit-scrollbar-track {
-  background: #F8FAFC;
+  background: #fff;
 }
 
 /* Handle */
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #10b981;
+  background: #90a1b9;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #90a1b9;
 }
 
