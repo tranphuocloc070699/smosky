@@ -24,7 +24,7 @@ RUN npm run build
 
 # expose the host and port 3000 to the server
 ENV HOST 0.0.0.0
-EXPOSE 3000
+EXPOSE 8000
 
 # run the build project with node
-ENTRYPOINT ["node", ".output/server/index.mjs"]
+ENTRYPOINT ["sh", "-c", "NITRO_PORT=8000 node .output/server/index.mjs"]
