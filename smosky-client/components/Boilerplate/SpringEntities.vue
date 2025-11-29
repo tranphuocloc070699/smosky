@@ -103,8 +103,7 @@
             <USelect
                 :disabled="row.disable || checkIsRelation(row.type)"
                 :model-value="row.type"
-                :options="originalTypes"
-                option-attribute="type"
+                :options="originalTypes.map(type => ({label:type.name,value:type.value}))"
                 @input="(e : Event) => onTypeSelectChanging(e,row)"
             />
             <div
