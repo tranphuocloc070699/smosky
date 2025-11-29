@@ -1,6 +1,6 @@
 <template>
   <div
-      class="flex items-start overflow-x-auto  gap-10 py-4 flex-nowrap h-[439px]"
+      class="flex items-start overflow-x-auto  gap-10 py-4 flex-nowrap h-[439px] scrollbar"
   >
     <div
         v-for="item in springDependenciesSelected"

@@ -1,6 +1,6 @@
 <template>
   <div
-      class="border border-slate-200 rounded-md grid grid-cols-1 md:grid-cols-3 min-h-[439px]"
+      class="border border-slate-200 rounded-md grid grid-cols-1 md:grid-cols-3 min-h-[439px] "
   >
     <!-- Table List -->
     <div class="border-r border-slate-200 col-span-1">
