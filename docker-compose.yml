@@ -8,6 +8,10 @@ services:
     container_name: smosky-boilerplate-server
     ports:
       - "8090:8090"
+    volumes:
+      - ./smosky-boilerplate-server/zip:/app/zip
+      - ./smosky-boilerplate-server/zip-response:/app/zip-response
+      - ./smosky-boilerplate-server/extract-zip:/app/extract-zip
     networks:
       - blog-network
     restart: unless-stopped
